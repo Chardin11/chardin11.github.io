@@ -1,0 +1,86 @@
+/*
+Developer: Connor Hardin
+Date: 7/26/2022
+Assignment: Final Project
+File Name: styles.css
+ */
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Times New Roman", serif;
+  text-decoration: none;
+}
+
+.wrapper, section {
+  display: grid;
+  padding: 10px;
+  grid-template-columns:repeat(2,2fr);
+  grid-template-areas:
+  'left home'
+  'left my-port'
+  'left about-me'
+  'left skills'
+  'left contact';
+}
+
+header {
+  position: fixed;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+
+header nav a {
+  padding: 10px 25px;
+  color: grey;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  justify-content: left;
+}
+
+header nav a.active,
+header nav a:hover {
+  background: grey;
+  color: #fff;
+}
+
+section{
+  min-height: 50vh;
+  display: grid;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+section h1 {
+  font-size: 3.4rem;
+  text-align: center;
+}
+
+section:nth-child(odd){
+  background: #eee;
+}
+.left nav {
+  grid-area: left
+}
+#home {
+  grid-area: home;
+}
+
+#my-portfolio {
+  grid-area: my-port;
+}
+#about-me {
+  grid-area: about-me;
+}
+#skills {
+  grid-area: skills;
+}
+#contact {
+  grid-area: contact;
+}
