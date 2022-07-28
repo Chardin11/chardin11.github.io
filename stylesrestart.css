@@ -1,0 +1,83 @@
+/*
+Developer: Connor Hardin
+Date: 7/26/2022
+Assignment: Final Project
+File Name: styles.css
+ */
+
+ *{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+body{
+    background: #f5f6fa;
+}
+
+/* side bar */
+.wrapper {
+  display: grid;
+  grid-template-areas:
+  'sidebar home'
+  'sidebar my-port'
+  'sidebar about-me'
+  'sidebar skills'
+  'sidebar contact';
+  grid-template-columns: 215px 2fr;
+}
+
+.wrapper .sidebar{
+    background: rgb(5, 68, 104);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.wrapper .sidebar .profile img {
+  display: block;
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+div nav a {
+  padding: 10px 25px;
+  color: grey;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  justify-content: center;
+}
+div nav a.active,
+div nav a:hover {
+  background: grey;
+  color: #fff;
+}
+
+#sidebar {
+  grid-area: sidebar;
+}
+/* Main Page */
+#home {
+text-align:center;
+grid-area: home;
+}
