@@ -72,7 +72,6 @@
           <br>
         </div>
         <div class="about body">
-
           <p><strong>I am a front-end web developer in training, specializing in html and CSS.</strong><br><br>
             I was a full time Iron Worker before deciding to go back to college to finish my
              Computer Information Degree. In my off time I enjoy learning new computer languages and ways to make websites more responsive.</p>
@@ -82,6 +81,81 @@
     <div id="skills">
       <div class="skills heading">
         <h2>Skills</h2>
+      </div>
+      <div class="skills body">
+        <div id="html">
+          <h3><i class="fa-solid fa-code"></i>&#160;HTML</h3>
+          <div class="skill">
+            <div class="outer">
+              <div class="inner">
+                <div id="number">
+
+                </div>
+              </div>
+            </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+           <defs>
+              <linearGradient id="GradientColor">
+                 <stop offset="0%" stop-color="#e91e63" />
+                 <stop offset="100%" stop-color="#673ab7" />
+              </linearGradient>
+           </defs>
+           <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+
+          </div>
+
+        <script>
+          let number = document.getElementById("number");
+          let counter = 0;
+          setInterval(() => {
+            if(counter == 65){
+              clearInterval();
+            }else{
+              counter += 1;
+              number.innerHTML = counter + "%";
+            }
+
+          }, 30)
+
+        </script>
+
+        </div>
+        <div id="css">
+          <h3><i class="fa-brands fa-css3"></i>&#160;CSS</h3>
+          <div class="skill">
+            <div class="outer">
+              <div class="inner">
+                <div id="numberOne">
+
+                </div>
+              </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+               <defs>
+                  <linearGradient id="GradientColor">
+                     <stop offset="0%" stop-color="#e91e63" />
+                     <stop offset="100%" stop-color="#673ab7" />
+                  </linearGradient>
+               </defs>
+               <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+
+        </div>
+        <script>
+          let numberOne = document.getElementById("numberOne");
+          let counterOne = 0;
+          setInterval(() => {
+            if(counterOne == 65){
+              clearInterval();
+            }else{
+              counterOne += 1;
+              numberOne.innerHTML = counterOne + "%";
+            }
+
+          }, 30)
+
+        </script>
 
       </div>
     </div>

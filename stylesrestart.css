@@ -83,8 +83,10 @@ div nav a:hover {
 }
 /* Main Page */
 #home {
-text-align:center;
-grid-area: home;
+  padding-top: 30px;
+  text-align:center;
+  grid-area: home;
+  min-height: 60vh;
 }
 
 #home a {
@@ -174,5 +176,82 @@ font-size: 2.2rem;
   text-align: center;
   font-size: 2.2rem;
   padding: 10px;
-
 }
+
+#skills .body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  min-height: 10rem;
+}
+
+#html , #css {
+  box-shadow: var(--shadow);
+  height: 40vh;
+  width:
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  justify-content: center;
+}
+
+
+/* progres bar */
+.skill {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+.outer {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.17)
+}
+.inner {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+               inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0, 0, 0,0.05);
+}
+#number {
+  font-weight: 600;
+  color: #555;
+}
+
+#numberOne {
+  font-weight: 600;
+  color: #555;
+}
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472; /*use to animate */
+  animation: anim 2s linear forwards;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes anim{
+  100%{
+    stroke-dashoffset: 165;
+  }
+}
+
+/* Contact */
