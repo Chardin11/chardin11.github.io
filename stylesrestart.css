@@ -15,6 +15,11 @@ File Name: styles.css
     color: black;
 }
 
+:root {
+  --shadow: 5px 5px 25px 8px grey;
+
+}
+
 body{
     background: #f5f6fa;
 }
@@ -28,7 +33,7 @@ body{
   'sidebar about-me'
   'sidebar skills'
   'sidebar contact';
-  grid-template-columns: 215px 2fr;
+  grid-template-columns: 220px 2fr;
 }
 
 .wrapper .sidebar{
@@ -36,7 +41,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    width: 225px;
+    width: 220px;
     height: 100%;
     padding: 20px 0;
     transition: all 0.5s ease;
@@ -80,4 +85,94 @@ div nav a:hover {
 #home {
 text-align:center;
 grid-area: home;
+}
+
+#home a {
+  background-color: grey;
+  padding: 4px;
+  margin-top: 400px;
+}
+
+
+
+/* my-portfolio */
+#my-portfolio {
+  grid-area: my-port;
+  padding: 10px;
+}
+#my-portfolio h2 {
+text-indent: 25px;
+padding: 10px;
+font-size: 2.2rem;
+
+}
+
+#my-portfolio img {
+  width: 35%;
+  height: 35%;
+}
+
+#my-portfolio p:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 90%;
+}
+
+
+/* About Me */
+#about-me {
+  grid-area: about-me;
+  padding: 10px;
+  display: block;
+}
+
+#about-me h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 10px;
+}
+
+#about-me p strong {
+  width: 500px;
+  text-align: center;
+  grid-area: h5;
+}
+
+#about-me p {
+  width: 475px;
+  text-align: center;
+  float: left;
+  grid-area: p;
+}
+
+#about-me img {
+  width: 50%;
+  height: 70%;
+  border-radius: 25%;
+  grid-area: img;
+}
+
+#about-me .body {
+  display: grid;
+  grid-template-areas:
+  'p img'
+  'p img';
+}
+
+
+/* skills */
+#skills {
+  grid-area: skills;
+  text-indent: 25px;
+}
+
+#skills h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 10px;
+
 }
