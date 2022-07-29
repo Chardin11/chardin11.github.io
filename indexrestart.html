@@ -76,6 +76,9 @@
             I was a full time Iron Worker before deciding to go back to college to finish my
              Computer Information Degree. In my off time I enjoy learning new computer languages and ways to make websites more responsive.</p>
           <img src="images/IMG_afro.jpg" alt="about pic">
+          <a class="btn btn-primary" href="Resume-CHardin.pdf" download="Resume-CHardin" role="button">
+            <i class="fa-solid fa-download"></i>&#160;Download Resume</a>
+
         </div>
     </div>
     <div id="skills">
@@ -138,7 +141,7 @@
                      <stop offset="100%" stop-color="#673ab7" />
                   </linearGradient>
                </defs>
-               <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+               <circle class="skillTwo" cx="80" cy="80" r="70" stroke-linecap="round" />
             </svg>
 
         </div>
@@ -146,22 +149,80 @@
           let numberOne = document.getElementById("numberOne");
           let counterOne = 0;
           setInterval(() => {
-            if(counterOne == 65){
+            if(counterOne == 60){
               clearInterval();
             }else{
               counterOne += 1;
               numberOne.innerHTML = counterOne + "%";
             }
 
-          }, 30)
+          }, 34)
 
         </script>
 
       </div>
-    </div>
-    <div id="contact">
+      <div id="js">
+        <h3><i class="fa-brands fa-square-js"></i>&#160;JS</h3>
+        <div class="skill">
+          <div class="outer">
+            <div class="inner">
+              <div id="numberTwo">
 
+              </div>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+             <defs>
+                <linearGradient id="GradientColor">
+                   <stop offset="0%" stop-color="#e91e63" />
+                   <stop offset="100%" stop-color="#673ab7" />
+                </linearGradient>
+             </defs>
+             <circle class="skillThree" cx="80" cy="80" r="70" stroke-linecap="round" />
+          </svg>
+
+      </div>
+      <script>
+        let numberTwo = document.getElementById("numberTwo");
+        let counterTwo = 0;
+        setInterval(() => {
+          if(counterTwo == 40){
+            clearInterval();
+          }else{
+            counterTwo += 1;
+            numberTwo.innerHTML = counterTwo + "%";
+          }
+
+        }, 47)
+
+      </script>
+
+      </div>
     </div>
+  </div>
+    <div id="contact">
+      <div class="contact header">
+        <h2>Contact Me</h2>
+      </div>
+      <div class="contact body">
+        <p>E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-envelope"></i>&#160;<a href="mailto: Connorhardin@gmail.com">Connorhardin@gmail.com</a></p>
+        <br>
+        <p>Github:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-brands fa-github"></i>&#160;<a href="https://github.com/Chardin11">https://github.com/Chardin11</a></p>
+        <br>
+        <p>Facebook: <i class="fa-brands fa-facebook-f"></i>&#160;<a href="https://www.facebook.com/connor.hardin.77/">Connor Hardin</a></p>
+      </div>
     </div>
+    <footer>
+      <section class="left">
+        <i class="fa-solid fa-envelope"></i>
+      </section>
+      <section class="center">
+        <i class="fa-brands fa-facebook-f"></i>
+      </section>
+      <section class="right">
+        <i class="fa-brands fa-github"></i>
+      </section>
+    </footer>
+  </div>
   </body>
 </html>

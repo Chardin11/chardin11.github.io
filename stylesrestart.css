@@ -32,7 +32,8 @@ body{
   'sidebar my-port'
   'sidebar about-me'
   'sidebar skills'
-  'sidebar contact';
+  'sidebar contact'
+  'sidebar footer';
   grid-template-columns: 220px 2fr;
 }
 
@@ -152,8 +153,8 @@ font-size: 2.2rem;
 }
 
 #about-me img {
-  width: 50%;
-  height: 70%;
+  width: 60%;
+  height: 80%;
   border-radius: 25%;
   grid-area: img;
 }
@@ -161,10 +162,16 @@ font-size: 2.2rem;
 #about-me .body {
   display: grid;
   grid-template-areas:
-  'p img'
-  'p img';
+  'p img btn'
+  'p img open';
 }
 
+
+#about-me .btn {
+  grid-area: btn;
+  display: block;
+  width: 50;
+}
 
 /* skills */
 #skills {
@@ -180,19 +187,21 @@ font-size: 2.2rem;
 
 #skills .body {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 250px;
+  align-items: center;
   text-align: center;
-  min-height: 10rem;
+  min-height: 40vh;
 }
 
-#html , #css {
+#html , #css, #js {
   box-shadow: var(--shadow);
-  height: 40vh;
-  width:
+  height: 25vh;
+  width: 25vh;
   align-items: center;
   text-align: center;
   padding: 10px;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 
@@ -233,12 +242,18 @@ font-size: 2.2rem;
   font-weight: 600;
   color: #555;
 }
+
+#numberTwo {
+  font-weight: 600;
+  color: #555;
+
+}
 circle {
   fill: none;
   stroke: url(#GradientColor);
   stroke-width: 20px;
   stroke-dasharray: 472;
-  stroke-dashoffset: 472; /*use to animate */
+  stroke-dashoffset: 472;
   animation: anim 2s linear forwards;
 }
 
@@ -254,4 +269,83 @@ svg {
   }
 }
 
+.skillTwo {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation-name: animTwo;
+  animation-duration: 2s linear forwards;
+}
+
+@keyframes animTwo{
+  100%{
+    stroke-dashoffset: 188;
+  }
+}
+
+.skillThree {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation-name: animThree;
+  animation-duration: 2s linear forwards;
+}
+@keyframes animThree{
+  100%{
+    stroke-dashoffset: 283;
+  }
+}
 /* Contact */
+#contact {
+  grid-area: contact;
+}
+
+#contact  h2{
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+#contact .body {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 10px;
+  min-height: 20vh;
+}
+
+/* footer */
+footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-areas:
+  'left center right';
+  min-height: 10vh;
+}
+
+.left {
+  grid-area: left;
+  display: flex;
+}
+.left i {
+  border-radius: 12px 50px 20px 5px;
+  background-color: grey;
+}
+
+i {
+  left: 10px;
+}
+
+.center {
+  grid-area: center;
+
+}
+
+.right {
+  grid-area: right;
+}
