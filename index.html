@@ -14,35 +14,224 @@
   </head>
   <body>
     <div class="wrapper">
-    <header class="left">
+      <!--Top menu -->
+      <div class="sidebar" id="sidebar">
+        <div class="profile">
+         <img src="images/IMG_afro.jpg" alt="profile">
+         <h3>Connor Hardin</h3>
+         <p>Web Designer</p>
+       </div>
 
-      <nav>
-        <a href="#home" class="active"><i class="fa-solid fa-house"></i>&#160;Home</a>
-        <a href="#my-portfolio">My Portfolio</a>
-        <a href="#about-me">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact"><i class="fa-solid fa-phone"></i>&#160;Contact</a>
-        <br>
-        <br>
-        <img src="IMG_afro.jpg" alt="picture">
-      </nav>
-    </header>
-    <section id="home">
-      <h1>Connor Hardin</h1>
-      <h6>Web Developer</h6>
-      <a href="Resume-CHardin.pdf" download="CHardin Resume" class="btn"><i class="fa-solid fa-download"></i>&#160;Download Resume</a>
-    </section>
-    <section id="my-portfolio">
-      <h2>My Portfolio</h2>
-      <div class="img-one">
-        <p>Date: 7/13/2022</p>
-        <img src="Howards-store.png" alt="howardsStore" class="port-img">
+         <nav>
+           <a href="#home" class="active"><i class="fa-solid fa-house"></i>&#160;Home</a>
+           <a href="#my-portfolio">My Portfolio</a>
+           <a href="#about-me">About Me</a>
+           <a href="#skills">Skills</a>
+           <a href="#contact"><i class="fa-solid fa-phone"></i>&#160;Contact</a>
+         </nav>
       </div>
-    </section>
-    <section id="about-me">About Me</section>
-    <section id="skills">Skills</section>
-    <section id="contact">Contact</section>
-  </div>
+      <div id="home">
+        <h1>Connor Hardin</h1>
+        <br>
+        <h4>Web Designer</h4>
+        <br>
+        <br>
+        <a class="btn btn-primary" href="Resume-CHardin.pdf" download="Resume-CHardin" role="button">
+          <i class="fa-solid fa-download"></i>&#160;Download Resume</a>
+      </div>
+      <div id="my-portfolio">
+        <h2>My Portfolio</h2>
+        <br>
+        <div class="img-one">
+          <br>
+          <p>Date: 7/20/2022&#160;</p>
+          <br>
+          <img src="images/Howards-store.png" alt="howardsStore" class="port-img">
+        </div>
+        <div class="img-two">
+          <br>
+          <p>Date: 7/15/2022&#160;</p>
+          <br>
+          <img src="images/Grids.png" alt="grids">
+        </div>
+        <div class="img-three">
+          <br>
+          <p>Date: 6/21/2022&#160;</p>
+          <br>
+          <img src="images/Chardin-schedule.png" alt="schedule">
+        </div>
+        <div class="img-four">
+          <br>
+          <p>Date 6/7/2022&#160;</p>
+          <br>
+          <img src="images/MobilePanini.png" alt="MobilePanini">
+        </div>
+      </div>
+    <div id="about-me">
+        <div class="about heading">
+          <h2>About Me</h2>
+          <br>
+        </div>
+        <div class="about body">
+          <p><strong>I am a front-end web developer in training, specializing in html and CSS.</strong><br><br>
+            I was a full time Iron Worker before deciding to go back to college to finish my
+             Computer Information Degree. In my off time I enjoy learning new computer languages and ways to make websites more responsive.</p>
+          <img src="images/IMG_afro.jpg" alt="about pic">
+          <a class="btn btn-primary" href="Resume-CHardin.pdf" download="Resume-CHardin" role="button">
+            <i class="fa-solid fa-download"></i>&#160;Download Resume</a>
 
+        </div>
+    </div>
+    <div id="skills">
+      <div class="skills heading">
+        <h2>Skills</h2>
+      </div>
+      <div class="skills body">
+        <div id="html">
+          <h3><i class="fa-solid fa-code"></i>&#160;HTML</h3>
+          <div class="skill">
+            <div class="outer">
+              <div class="inner">
+                <div id="number">
+
+                </div>
+              </div>
+            </div>
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+           <defs>
+              <linearGradient id="GradientColor">
+                 <stop offset="0%" stop-color="#e91e63" />
+                 <stop offset="100%" stop-color="#673ab7" />
+              </linearGradient>
+           </defs>
+           <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
+
+          </div>
+
+        <script>
+          let number = document.getElementById("number");
+          let counter = 0;
+          setInterval(() => {
+            if(counter == 65){
+              clearInterval();
+            }else{
+              counter += 1;
+              number.innerHTML = counter + "%";
+            }
+
+          }, 30)
+
+        </script>
+
+        </div>
+        <div id="css">
+          <h3><i class="fa-brands fa-css3"></i>&#160;CSS</h3>
+          <div class="skill">
+            <div class="outer">
+              <div class="inner">
+                <div id="numberOne">
+
+                </div>
+              </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+               <defs>
+                  <linearGradient id="GradientColor">
+                     <stop offset="0%" stop-color="#e91e63" />
+                     <stop offset="100%" stop-color="#673ab7" />
+                  </linearGradient>
+               </defs>
+               <circle class="skillTwo" cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+
+        </div>
+        <script>
+          let numberOne = document.getElementById("numberOne");
+          let counterOne = 0;
+          setInterval(() => {
+            if(counterOne == 60){
+              clearInterval();
+            }else{
+              counterOne += 1;
+              numberOne.innerHTML = counterOne + "%";
+            }
+
+          }, 34)
+
+        </script>
+
+      </div>
+      <div id="js">
+        <h3><i class="fa-brands fa-square-js"></i>&#160;JS</h3>
+        <div class="skill">
+          <div class="outer">
+            <div class="inner">
+              <div id="numberTwo">
+
+              </div>
+            </div>
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+             <defs>
+                <linearGradient id="GradientColor">
+                   <stop offset="0%" stop-color="#e91e63" />
+                   <stop offset="100%" stop-color="#673ab7" />
+                </linearGradient>
+             </defs>
+             <circle class="skillThree" cx="80" cy="80" r="70" stroke-linecap="round" />
+          </svg>
+
+      </div>
+      <script>
+        let numberTwo = document.getElementById("numberTwo");
+        let counterTwo = 0;
+        setInterval(() => {
+          if(counterTwo == 40){
+            clearInterval();
+          }else{
+            counterTwo += 1;
+            numberTwo.innerHTML = counterTwo + "%";
+          }
+
+        }, 47)
+
+      </script>
+
+      </div>
+    </div>
+  </div>
+    <div id="contact">
+      <div class="contact header">
+        <h2>Contact Me</h2>
+      </div>
+      <div class="contact body">
+        <p>E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-envelope"></i>&#160;<a href="mailto: Connorhardin@gmail.com">Connorhardin@gmail.com</a></p>
+        <br>
+        <p>Github:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-brands fa-github"></i>&#160;<a href="https://github.com/Chardin11">https://github.com/Chardin11</a></p>
+        <br>
+        <p>Facebook: <i class="fa-brands fa-facebook-f"></i>&#160;<a href="https://www.facebook.com/connor.hardin.77/">Connor Hardin</a></p>
+      </div>
+    </div>
+    <footer>
+      <section class="left">
+        <div class="btn-left">
+          <a href="mailto: Connorhardin@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+
+        </div>
+      </section>
+      <section class="center">
+        <div class="btn-center">
+          <a href="https://www.facebook.com/connor.hardin.77/"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </section>
+      <section class="right">
+        <div class="btn-right">
+          <a href="https://github.com/Chardin11"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+      </section>
+    </footer>
+  </div>
   </body>
 </html>
