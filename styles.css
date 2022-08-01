@@ -78,7 +78,6 @@ div nav a {
   text-transform: capitalize;
   justify-content: center;
 }
-div nav a.active,
 div nav a:hover {
   background: var(--dgrey);
   color: #fff;
@@ -91,30 +90,51 @@ div nav a:hover {
 /* Main Page */
 #home {
   padding-top: 60px;
-  text-align:center;
+  text-align: center;
+  align-items: center;
   grid-area: home;
   min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#home h1 {
+  font-size: 4.0rem;
+  color: #4B4E6D;
+}
+
+#home h4 {
+  font-size: 2.0rem;
+  color: #4B4E6D;
 }
 
 #home a {
   background-color: var(--dark);
-  margin-top: 500px;
+  margin-top: 200px;
   border-radius: 5%;
+  width: 250px;
   padding: 15px;
+  box-shadow: 10px 10px 8px;
 }
 
+#home a:hover {
+  color: var(--dark);
+  background-color: var(--dgrey);
+}
 
 
 /* my-portfolio */
 #my-portfolio {
   grid-area: my-port;
   padding: 10px;
+  background-color: var(--secondary);
 }
 #my-portfolio h2 {
   text-indent: 25px;
   padding: 10px;
-  font-size: 2.2rem;
+  font-size: 3.0rem;
   color: var(--dark);
+  text-align: center;
 }
 
 #my-portfolio img {
@@ -124,6 +144,7 @@ div nav a:hover {
 
 #my-portfolio p {
   text-indent: 10px;
+  font-size: 1.3rem;
 }
 
 #my-portfolio p:after {
@@ -133,7 +154,7 @@ div nav a:hover {
   height: 1px;
   position: relative;
   vertical-align: middle;
-  width: 90%;
+  width: 80%;
 }
 
 
@@ -172,23 +193,32 @@ div nav a:hover {
   height: 80%;
   border-radius: 25%;
   grid-area: img;
+  box-shadow: var(--shadow);
 }
 
 #about-me .body {
   display: grid;
+  align-items: center;
   grid-template-areas:
   'p img btn'
-  'p img open';
+  'p img btn';
 }
 
 
 #about-me a {
   grid-area: btn;
-  display: block;
   background-color: var(--dark);
+  width: 250px;
+  height: 40px;
   text-align: center;
   border-radius: 5%;
-  padding: 15px;
+  padding: 10px;
+  box-shadow: 10px 10px 8px;
+}
+
+#about-me a:hover {
+  color: var(--dark);
+  background-color: var(--dgrey);
 
 }
 
@@ -196,6 +226,7 @@ div nav a:hover {
 #skills {
   grid-area: skills;
   text-indent: 25px;
+  background-color: var(--secondary);
 }
 
 #skills h2 {
@@ -216,8 +247,8 @@ div nav a:hover {
 
 #html , #css, #js {
   box-shadow: var(--shadow);
-  height: 25vh;
-  width: 25vh;
+  height: 23vh;
+  width: 23vh;
   align-items: center;
   text-align: center;
   padding: 10px;
@@ -310,7 +341,7 @@ svg {
   stroke-dasharray: 472;
   stroke-dashoffset: 472;
   animation-name: animTwo;
-  animation-duration: 2s linear forwards;
+  animation-duration: 2s;
 }
 
 @keyframes animTwo{
@@ -326,7 +357,7 @@ svg {
   stroke-dasharray: 472;
   stroke-dashoffset: 472;
   animation-name: animThree;
-  animation-duration: 2s linear forwards;
+  animation-duration: 2s;
 }
 @keyframes animThree{
   100%{
@@ -342,6 +373,8 @@ svg {
   font-size: 2.2rem;
   text-align: center;
   color: var(--dark);
+  padding-top: 10px;
+
 }
 
 #contact .body {
@@ -355,6 +388,14 @@ svg {
   min-height: 20vh;
 }
 
+#contact .body p {
+  color: #4B4E6D;
+}
+
+#contact .body a {
+  color: #4B4E6D;
+
+}
 /* footer */
 footer {
   grid-area: footer;
@@ -371,7 +412,7 @@ footer {
 }
 .btn-left i{
   margin-top: 4px;
-  margin-left: 200px;
+  margin-left: 198px;
   align-items: center;
   background-color: var(--dark);
   height: 70px;
@@ -408,6 +449,7 @@ footer {
 }
 
 i {
+  font-size: 1.3rem;
 }
 
 .center {
@@ -418,3 +460,5 @@ i {
 .right {
   grid-area: right;
 }
+
+/*media*/
